@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract technology background with glowing lines",
+      "imageUrl": "https://picsum.photos/seed/inforsenia-hero/1920/1080",
+      "imageHint": "technology code"
+    },
+    {
+      "id": "speaker-1",
+      "description": "Tech industry professional portrait",
+      "imageUrl": "https://picsum.photos/seed/speaker1/400/400",
+      "imageHint": "professional person"
+    },
+    {
+      "id": "speaker-2",
+      "description": "Software engineer portrait",
+      "imageUrl": "https://picsum.photos/seed/speaker2/400/400",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "speaker-3",
+      "description": "Data scientist portrait",
+      "imageUrl": "https://picsum.photos/seed/speaker3/400/400",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "speaker-4",
+      "description": "Cybersecurity expert portrait",
+      "imageUrl": "https://picsum.photos/seed/speaker4/400/400",
+      "imageHint": "expert portrait"
+    },
+    {
+      "id": "venue-school",
+      "description": "Educational institution modern building",
+      "imageUrl": "https://picsum.photos/seed/school/800/600",
+      "imageHint": "modern building"
+    },
+    {
+      "id": "sponsor-google",
+      "description": "Google Logo Placeholder",
+      "imageUrl": "https://picsum.photos/seed/sp1/200/100",
+      "imageHint": "tech company"
+    },
+    {
+      "id": "sponsor-microsoft",
+      "description": "Microsoft Logo Placeholder",
+      "imageUrl": "https://picsum.photos/seed/sp2/200/100",
+      "imageHint": "tech logo"
+    }
+  ]
 }
