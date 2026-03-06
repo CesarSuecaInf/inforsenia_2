@@ -6,6 +6,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
+  const logo = PlaceHolderImages.find(img => img.id === 'ies-logo');
 
   return (
     <div className="flex flex-col">
@@ -24,9 +25,19 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-accent mb-8 animate-in fade-in slide-in-from-top-5 duration-700">
-            <Sparkles className="h-4 w-4" />
-            <span className="text-sm font-bold tracking-wider uppercase">Paiporta | Valencia</span>
+          <div className="flex flex-col items-center mb-8 animate-in fade-in slide-in-from-top-5 duration-700">
+            <div className="relative h-20 w-48 mb-6">
+              <Image 
+                src={logo?.imageUrl || ""} 
+                alt="IES La Sénia Logo" 
+                fill 
+                className="object-contain brightness-0 invert"
+              />
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-accent">
+              <Sparkles className="h-4 w-4" />
+              <span className="text-sm font-bold tracking-wider uppercase">Paiporta | Valencia</span>
+            </div>
           </div>
           
           <h1 className="font-headline text-6xl md:text-8xl font-bold mb-6 tracking-tight animate-in fade-in slide-in-from-bottom-5 duration-1000">
@@ -35,7 +46,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-in fade-in duration-1000 delay-300">
-            Las jornadas técnicas de informática del IES La Sénia. Charlas, ponencias y talleres de vanguardia.
+            Las jornadas técnicas de informática del IES La Sénia. Charlas, ponencias y talleres de vanguardia para el alumnado.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in duration-1000 delay-500">

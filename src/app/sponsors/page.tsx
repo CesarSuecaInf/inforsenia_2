@@ -3,12 +3,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ExternalLink, Handshake } from "lucide-react";
 
 export default function SponsorsPage() {
-  const sponsors = [
-    { name: "Google Cloud", photo: "sponsor-google", tier: "Platinum" },
-    { name: "Microsoft", photo: "sponsor-microsoft", tier: "Gold" },
-    { name: "Valencia Tech Hub", photo: "hero-bg", tier: "Gold" },
-    { name: "Ajuntament de Paiporta", photo: "venue-school", tier: "Partner" },
-  ];
+  const iesLogo = PlaceHolderImages.find(img => img.id === 'ies-logo');
 
   return (
     <div className="py-20">
@@ -21,6 +16,22 @@ export default function SponsorsPage() {
         </div>
 
         <div className="space-y-24 max-w-6xl mx-auto">
+          {/* Main Organizer */}
+          <div className="flex flex-col items-center">
+            <h2 className="text-center font-headline text-2xl uppercase tracking-[0.2em] text-muted-foreground font-bold mb-10">Organiza</h2>
+            <div className="bg-white/5 rounded-3xl p-12 border border-white/10 flex flex-col items-center gap-6 group hover:border-primary/40 transition-all">
+              <div className="relative h-32 w-64">
+                <Image 
+                  src={iesLogo?.imageUrl || ""} 
+                  alt="IES La Sénia" 
+                  fill 
+                  className="object-contain brightness-0 invert"
+                />
+              </div>
+              <p className="font-headline text-2xl font-bold text-foreground">IES La Sénia, Paiporta</p>
+            </div>
+          </div>
+
           {/* Platinum */}
           <div>
             <h2 className="text-center font-headline text-2xl uppercase tracking-[0.2em] text-accent font-bold mb-10">Platinum Sponsors</h2>
@@ -49,11 +60,11 @@ export default function SponsorsPage() {
 
           {/* Partners */}
           <div>
-            <h2 className="text-center font-headline text-2xl uppercase tracking-[0.2em] text-muted-foreground font-bold mb-10">Colaboradores</h2>
+            <h2 className="text-center font-headline text-2xl uppercase tracking-[0.2em] text-muted-foreground font-bold mb-10">Colaboradores Locales</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[1, 2, 3, 4].map(i => (
                 <div key={i} className="bg-secondary/20 rounded-xl p-6 h-24 flex items-center justify-center border grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
-                  <span className="font-bold text-muted-foreground">LOCAL PARTNER {i}</span>
+                  <span className="font-bold text-muted-foreground text-center">PARTNER {i}</span>
                 </div>
               ))}
             </div>

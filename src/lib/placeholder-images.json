@@ -7,6 +7,12 @@
       "imageHint": "technology code"
     },
     {
+      "id": "ies-logo",
+      "description": "Logotipo oficial IES La Sénia",
+      "imageUrl": "https://ieslasenia.es/wp-content/uploads/2021/01/logotipo-ies-la-senia.png",
+      "imageHint": "school logo"
+    },
+    {
       "id": "speaker-1",
       "description": "Tech industry professional portrait",
       "imageUrl": "https://picsum.photos/seed/speaker1/400/400",
