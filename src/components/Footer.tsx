@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h4 className="font-headline font-bold mb-4">Explora</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="/schedule" className="hover:text-primary transition-colors">Agenda 2024</a></li>
+              <li><a href="/schedule" className="hover:text-primary transition-colors">Agenda 2026</a></li>
               <li><a href="/speakers" className="hover:text-primary transition-colors">Ponentes</a></li>
               <li><a href="/venue" className="hover:text-primary transition-colors">Cómo llegar</a></li>
               <li><a href="https://inforsenia.github.io/inforSENIA/index.html" className="hover:text-primary transition-colors">Edición Anterior</a></li>

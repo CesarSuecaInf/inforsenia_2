@@ -31,7 +31,7 @@ export default function Home() {
           
           <h1 className="font-headline text-6xl md:text-8xl font-bold mb-6 tracking-tight animate-in fade-in slide-in-from-bottom-5 duration-1000">
             INFOR<span className="text-primary">SENIA</span> <br className="hidden md:block" />
-            <span className="text-accent italic">Fest 2024</span>
+            <span className="text-accent italic">Fest 2026</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-in fade-in duration-1000 delay-300">
