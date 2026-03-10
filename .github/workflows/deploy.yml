@@ -31,7 +31,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Asegúrate de que tu carpeta de salida se llame 'dist'
+          path: . # Asegúrate de que tu carpeta de salida se llame 'dist'
 
   deploy:
     needs: build
